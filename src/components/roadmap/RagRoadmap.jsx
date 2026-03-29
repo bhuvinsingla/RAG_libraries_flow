@@ -92,17 +92,7 @@ function RoadmapInner({ sections, onSelectTopic }) {
       <Panel position="top-left" className="rag-roadmap__panel-title">
         <p className="rag-roadmap__panel-kicker">Learning path</p>
         <p className="rag-roadmap__panel-head">RAG production roadmap</p>
-        <p className="rag-roadmap__panel-sub">
-          Click any topic to open detail, flow, and notes — same idea as{' '}
-          <a
-            href="https://roadmap.sh/react"
-            target="_blank"
-            rel="noreferrer"
-          >
-            roadmap.sh
-          </a>
-          .
-        </p>
+        
       </Panel>
     </ReactFlow>
   )
