@@ -8,9 +8,9 @@ import { librariesAndCostSection } from './libraryCatalog.js'
 export const guideMeta = {
   title: 'Retrieval-Augmented Generation',
   subtitle:
-    'Interactive flow diagrams and detailed notes on retrieval-augmented systems',
+    'A roadmap.sh-style path from concepts to production — click a node to study that stage',
   documentNote:
-    'Each topic opens with a draggable flow canvas (similar to a flow-chart tool). Expand “Full written explanation” beneath any diagram for the complete narrative.',
+    'Pan and zoom the roadmap (drag background, scroll to zoom). Click any box to open flows, library costs, and full notes.',
 }
 
 export const sections = [

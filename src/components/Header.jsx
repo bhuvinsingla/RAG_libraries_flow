@@ -1,14 +1,23 @@
 import { guideMeta } from '../data/ragContent'
 
-export function Header() {
+export function Header({ onOpenTopics }) {
   return (
-    <header className="site-header" role="banner">
-      <div className="site-header__inner">
+    <header className="site-header site-header--roadmap" role="banner">
+      <div className="site-header__inner site-header__inner--roadmap">
         <div className="site-header__titles">
-          <p className="site-header__kicker">Technical reference guide</p>
+          <p className="site-header__kicker">Roadmap-style guide</p>
           <h1 className="site-header__title">{guideMeta.title}</h1>
           <p className="site-header__subtitle">{guideMeta.subtitle}</p>
         </div>
+        {onOpenTopics ? (
+          <button
+            type="button"
+            className="site-header__topics-btn"
+            onClick={onOpenTopics}
+          >
+            All topics
+          </button>
+        ) : null}
       </div>
     </header>
   )
